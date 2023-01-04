@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card mb-2">
+        <div class="card-header">
+            <p class="card-text">Edit Post</p>
+        </div>
+    </div>
+    <form class="update-post-form">
+        <div class="card-body">
+            <label for="editPostTitle" class="form-label text-dark">Title</label>
+            <input class="form-control" id="editPostTitle" rows="1" value="{{post.title}}"></input>
+            <label for="editPostContent" class="form-label text-dark mt-1">Content</label>
+            <input class="form-control" id="editPostContent" value="{{post.post_text}}"></input>
+        </div>
+        <div class="d-grid gap-2 p-3">
+            <button class="btn btn-outline-primary" type="submit" id="updatePostBtn">Update</button>
+            <button class="btn btn-outline-danger" type="button" id="deletePostBtn">Delete</button>
+        </div>
+    </form>
+</div>
+
+<script src="/js/update-post.js"></script>
+<script src="/js/delete-post.js"></script>

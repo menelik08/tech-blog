@@ -1,0 +1,9 @@
+<p class="h6 my-3 text-white">Comments</p>
+{{#each this}}
+<div class="card mb-2">
+    <div class="card-body">
+        <h5 class="card-title">{{user.username}} on {{format_date createdAt}}</h5>
+        <p class="card-text">{{comment_text}}</p>
+    </div>
+</div>
+{{/each}}

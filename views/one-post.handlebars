@@ -1,0 +1,17 @@
+{{> post-card post}}
+
+{{#if logged_in}}
+<form class="card comment-area-box">
+    <div class="card-body">
+        <label for="commentsTextArea" class="form-label text-dark">Comment</label>
+        <textarea class="form-control" id="commentsTextArea" rows="3"></textarea>
+        <button type="submit" class="btn btn-primary mt-3">Submit Comment</button>
+    </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if logged_in}}
+<script src="/js/comment.js"></script>
+{{/if}}
